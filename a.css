@@ -1,0 +1,44 @@
+@media (max-width: 576px) {
+    #main-logo{
+        width: 100px;
+        margin-top: 35px;
+    }
+
+}
+
+main {
+    background-color: #000000;
+}
+.value-proposition {
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.headline {
+    font-size: 24px;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.media-container {
+    margin-top: 20px;
+}
+
+.promo-video {
+    width: 100%;
+    max-width: 300px; /* Limitar el tamaño en móviles */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+

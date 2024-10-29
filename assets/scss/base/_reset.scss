@@ -1,0 +1,42 @@
+/* Eliminar márgenes y rellenos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Establecer un tamaño de fuente base */
+  html {
+    font-size: 100%; /* 16px por defecto */
+  }
+  
+  /* Eliminar estilos de listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Eliminar estilos de tablas */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Establecer estilos básicos para enlaces */
+  a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color */
+  }
+  
+  /* Establecer estilos básicos para imágenes */
+  img {
+    max-width: 100%; /* Asegura que las imágenes no desborden su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+  }
+  
+  /* Estilos para botones */
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  

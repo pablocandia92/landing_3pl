@@ -1,0 +1,38 @@
+.value-proposition {
+    color: $mantis;
+    background: linear-gradient($black 85%, $forest-green , $mantis);
+}
+.value-text {
+    font-family: "Montserrat", sans-serif;
+
+    .headline {
+        font-size: 40px;
+        font-weight: 550;
+        letter-spacing: 1px;
+    }
+}
+
+.cta-button{
+    color: #000000;
+    padding: 0.6em 1.3em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #6CB860;
+    cursor: pointer;
+    border: 1px solid #6CB860;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #108239, -6px -6px 12px #108239;
+}
+
+.cta-button:active {
+    color: #000000;
+    box-shadow: inset 4px 4px 12px #6CB860, inset -4px -4px 12px #108239;
+}
+
+.media-container {
+    margin: 0;
+    padding: 0;
+    .promo-video {
+        width: 100%;
+    }
+}
