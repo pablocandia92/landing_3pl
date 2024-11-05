@@ -22,38 +22,21 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a id="header-logo" class="navbar-brand" href="#">
-                <img src="/assets/img/logo-completo-sin-fondo-blanco.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
     <main>
-        
-        <section class="value-proposition container-fluid pt-5 pb-5">
+        <!-- VALUE PROPOSITION -->
+        <section class="value-proposition container-fluid">
+            <div class="value-proposition__logo container">
+                <img src="./assets/img/logo-completo-sin-fondo-blanco.png" alt="">
+            </div>
             <div class="container">
-                <div class="value-text mb-4">
-                    <h1 class="headline mb-4">La seguridad de tus envíos es nuestro compromiso</h1>
-                    <p class="description">We offer logistics solutions that optimize the delivery of your products, ensuring speed and reliability throughout the process.</p>
+                <div class="value-proposition__text">
+                    <div class="value-text mb-4">
+                        <h1 class="headline mb-4">La seguridad de tus envíos es nuestro compromiso</h1>
+                        <p class="description">We offer logistics solutions that optimize the delivery of your products, ensuring speed and reliability throughout the process.</p>
+                    </div>
+                    <button class="cta-button mb-5">Get Started Now</button>
                 </div>
-                <button class="cta-button mb-5">Get Started Now</button>
-                <div class="media-container ">
+                <div class="value-proposition__media media-container mb-4 pb-5">
                     <video src="https://www.youtube.com/watch?v=GMbn2yVTak4" class="promo-video" controls>
                         Your browser does not support video playback.
                     </video>
@@ -61,107 +44,255 @@
             </div>
         </section>
 
-        <section class="points container-fluid pt-5 pb-5">
-            <section class="questions">
-                <header>
-                    <h2 class="text-center">¿Te ha pasado alguna vez...?</h2>
-                </header>
+        <!-- Navbar -->
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a id="navbar-logo" class="navbar-brand" href="#">
+                    <img src="/assets/img/icono-sin-fondo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solutions">Nuestras soluciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">¿Cómo funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Membresias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+
+                    </ul>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--QUESTIONS-->
+        <div class="border_detail"></div>
+        <section class="questions section container-fluid pt-5 pb-5">
+            <header>
+                <h2 class="subtitle container">¿Te ha pasado alguna vez...?</h2>
+            </header>
+            <div class="questions__items container">
                 <ul>
                     <li>¿Estás cansado de que se pierdan tus paquetes?</li>
                     <li>¿Tus clientes se quejan porque sus productos llegan dañados?</li>
                     <li>¿Lidiando con retrasos constantes en las entregas?</li>
+                </ul>
+                <ul>
                     <li>¿Te preocupa la falta de seguimiento y transparencia en tus envíos?</li>
                     <li>¿Perdiendo clientes por no ofrecer entregas rápidas y seguras?</li>
                     <li>¿Te cuesta coordinar envíos multicanal y gestionar tu inventario?</li>
                 </ul>
-            </section>
-        
-            <section class="section solutions mt-5">
-                <header>
-                    <h2 class="text-center">Nuestras soluciones</h2>
-                </header>
-                <div class="carousel-solutions-container mt-2 mb-5">
-                    <div class="carousel-solutions">
-                        <div class="carousel-solutions__item active">
-                            <h6>
-                                Entrega rápida y confiable
-                            </h6>
-                            <div class="carousel-solutions__item__img"></div>
-                            <p>
-                                Garantizamos entregas en <strong>1-2 días</strong> gracias a nuestra red de almacenes certificados, ayudando a cumplir con los plazos que tus clientes esperan.
-                            </p>
-                        </div>
-                        <div class="carousel-solutions__item">
-                            <h6>
-                                Cuidado del producto
-                            </h6>
-                            <div class="carousel-solutions__item__img"></div>
-                            <p>
-                                Con un <strong>99.5%</strong> de precisión en la gestión de inventario, aseguramos que tus productos lleguen en perfectas condiciones, protegiendo la reputación de tu marca.
-                            </p>
-                        </div>
-                        <div class="carousel-solutions__item">
-                            <h6>
-                                Optimización logística
-                            </h6>
-                            <div class="carousel-solutions__item__img"></div>
-                            <p>
-                                Nuestras soluciones logísticas permiten ofrecer entregas más rápidas y eficientes, mejorando la satisfacción del cliente y reduciendo costos.
-                            </p>
-                        </div>
+            </div>
+        </section>
+
+
+        <!--SOLUTIONS-->
+        <div class="border_detail"></div>
+        <section id="solutions" class="section solutions container-fluid mt-5">
+            <header>
+                <h2 class="subtitle container">Nuestras soluciones</h2>
+            </header>
+                <div class="solutions__cards container">
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Entrega rápida y confiable
+                        </h6>
+                        <p>
+                            Garantizamos entregas en <strong>1-2 días</strong> gracias a nuestra red de almacenes certificados, ayudando a cumplir con los plazos que tus clientes esperan.
+                        </p>
                     </div>
-                    <div class="carousel-controls">
-                        <button class="prev">❮</button>
-                        <button class="next">❯</button>
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Cuidado del producto
+                        </h6>
+                        <p>
+                            Con un <strong>99.5%</strong> de precisión en la gestión de inventario, aseguramos que tus productos lleguen en perfectas condiciones, protegiendo la reputación de tu marca.
+                        </p>
                     </div>
-                    <div class="carousel-indicators">
-                        <button class="indicator active" data-slide="0"></button>
-                        <button class="indicator" data-slide="1"></button>
-                        <button class="indicator" data-slide="2"></button>
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Optimización logística
+                        </h6>
+                        <p>
+                            Nuestras soluciones logísticas permiten ofrecer entregas más rápidas y eficientes, mejorando la satisfacción del cliente y reduciendo costos.
+                        </p>
                     </div>
                 </div>
-            </section>
         </section>
     
-        <section class="section testimonials container-fluid pt-5 pb-5">
-            <h2>Clientes que confían en nosotros</h2>
-            <p>Más de 400 clientes activos confían en nosotros para sus operaciones logísticas diarias.</p>
-            <p>8 años de experiencia en logística, cobertura en más del 90% del territorio nacional.</p>
-            <p>El 95% de nuestros clientes recomiendan nuestros servicios por nuestra confiabilidad.</p>
-        </section>
-    
-        <section class="section how-it-works">
-            <h2>¿Cómo funciona?</h2>
-            <p>Aquí puedes incluir un roadmap gráfico o una secuencia visual que explique los pasos del servicio.</p>
-        </section>
-    
-        <section class="section faqs">
-            <h2>Preguntas Frecuentes (FAQs)</h2>
-            <p><strong>¿Cuál es el tiempo de entrega?</strong> En la mayoría de los casos, nuestros envíos llegan en 1-2 días.</p>
-            <p><strong>¿Cómo garantizan la seguridad de los productos?</strong> Gracias a un sistema avanzado de gestión de inventario con un 99.5% de precisión.</p>
-        </section>
-    
-        <section class="section pricing">
-            <h2>Planes de Precios</h2>
-            <div class="pricing-table">
-                <div>
-                    <h3>Básico</h3>
-                    <p>$19/mes</p>
-                    <p>Entrega en 2-3 días</p>
+        <div class="border_detail"></div>
+        <section class="section solutions container-fluid pt-5 pb-5">
+            <header>
+                <h2 class="subtitle container">¿Por qué elegirnos?</h2>
+            </header>
+            <div class="confidence__cards container">
+                <div class="confidence__cards__card">
+                    <div class="bg"></div>
+                    <div class="blob"></div>
+                    <header>
+                        <h6>Clientes activos</h6>
+                    </header>
+                    <p>Más de <strong>400 clientes activos</strong> confían en nosotros para sus operaciones logísticas diarias.</p>
                 </div>
-                <div>
-                    <h3>Estándar</h3>
-                    <p>$29/mes</p>
-                    <p>Entrega en 1-2 días</p>
+                <div class="confidence__cards__card">
+                    <div class="bg"></div>
+                    <div class="blob"></div>
+                    <header>
+                        <h6>Experiencia</h6>
+                    </header>
+                    <p><strong>8 años de experiencia</strong> en logística, cobertura en más del <strong>90%</strong> del territorio nacional.</p>
                 </div>
-                <div>
-                    <h3>Premium</h3>
-                    <p>$49/mes</p>
-                    <p>Entrega en el mismo día</p>
+                <div class="confidence__cards__card">
+                    <div class="bg"></div>
+                    <div class="blob"></div>
+                    <header>
+                        <h6>Recomendaciones</h6>
+                    </header>
+                    <p>El <strong>95%</strong> de nuestros clientes <strong>recomiendan</strong> nuestros servicios por nuestra confiabilidad.</p>
+                </div>
+
+            </div>
+        </section>
+    
+        <div class="border_detail"></div>
+        <section id="how-it-works" class="section how-it-works container-fluid pt-5 pb-5">
+            <header>
+                <h2 class="subtitle container">¿Cómo funciona?</h2>
+            </header>
+            <div class="container">
+                <p>Aquí puedes incluir un roadmap gráfico o una secuencia visual que explique los pasos del servicio.</p>
+            </div>
+        </section>
+    
+        <div class="border_detail"></div>
+        <section id="faqs" class="section container">
+            <header>
+                <h2 class="subtitle container">Preguntas Frecuentes (FAQs)</h2>
+            </header>
+            <div class="faqs__cards">
+                <div class="faqs__cards__card blue">
+                    <p class="tip">¿Cuál es el tiempo de entrega?</p>
+                    <p class="second-text">En la mayoría de los casos, nuestros envíos llegan en 1-2 días.</p>
+                </div>
+                <div class="faqs__cards__card blue">
+                    <p class="tip">¿Cómo garantizan la seguridad de los productos?</p>
+                    <p class="second-text">Gracias a un sistema avanzado de gestión de inventario con un 99.5% de precisión.</p>
+                </div>
+                <div class="faqs__cards__card blue">
+                    <p class="tip">¿Lorem ipsum dolor sit.?</p>
+                    <p class="second-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, debitis?</p>
                 </div>
             </div>
         </section>
+    
+        <div class="border_detail"></div>
+        <section id="pricing" class="section pricing">
+            <header>
+                <h2 class="subtitle container">Nuestras membresias</h2>
+            </header>
+            <div class="pricing__cards container">
+                <div class="wrapper">
+                <input id="tab-1" name="slider" type="radio" />
+                <input checked="" id="tab-2" name="slider" type="radio" />
+                <input id="tab-3" name="slider" type="radio" />
+                <header>
+                    <label class="tab-1" for="tab-1">Principiante</label>
+                    <label class="tab-2" for="tab-2">Profesional</label>
+                    <div class="slider"></div>
+                </header>
+                <div class="card-area">
+                    <div class="cards">
+                    <!--membresia principiante-->
+                    <div class="row row-1">
+                        <div class="price-details">
+                        <span class="price">$89.99</span>
+                        <p>ANUAL $989.89</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <strong>Reserva de Suite</strong> para hospedaje de paquetes (2 m3).
+                            </li>
+                            <li>
+                                <strong>Dirección en USA</strong> para retorno de mercadería.
+                            </li>
+                            <li>
+                                <strong>Recepción de paquetes.</strong>
+                            </li>
+                            <li>
+                                <strong>Envíos a Amz FBA</strong> a cardo del cliente (transportista UPS).
+                            </li>
+                            <li>
+                                <strong>Control de Calidad</strong> de 1 producto.
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!--membresia profesional-->
+                    <div class="row">
+                        <div class="price-details">
+                        <span class="price">$179.99</span>
+                        <p>ANUAL $1979.89</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <strong>Reserva de Suite</strong> para hospedaje de paquetes (4 m3).
+                            </li>
+                            <li>
+                                <strong>Dirección en USA</strong> para retorno de mercadería.
+                            </li>
+                            <li>
+                                <strong>Etiquetas labels</strong> de caja final.
+                            </li>
+                            <li>
+                                <strong>Envíos a Amz FBA</strong> a cargo del cliente (transportista UPS)
+                            </li>
+                            <li>
+                                <strong>Control de Calidad</strong> de 2 productos
+                            </li>
+                            <li>
+                                <strong>Embalaje y reemplazo</strong> de cajas externas
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="border_detail"></div>
+        <section id="contact" class="section contact">
+            <header>
+                <h2 class="subtitle container">Contacto</h2>
+            </header>
+            <div class="contact__form">
+
+            </div>
+        </section>
     </main>
+    <footer>
+        
+    </footer>
     
     </body>
 </html>

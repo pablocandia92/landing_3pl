@@ -1,0 +1,32 @@
+.subtitle {
+    font-size: 2rem;
+    color: $forest-green;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.border_detail {
+    width: 50%;
+    border-top: 4px solid $mantis;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+//todo  animacion
+
+
+
+@media (min-width:992px) {
+    .border_detail {
+        width: 25%;
+        margin-top: 70px;
+    }
+
+    .subtitle {
+        margin-bottom: 50px;
+        text-align: start;
+    }
+
+}

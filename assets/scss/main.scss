@@ -1,6 +1,15 @@
 @import 'base/reset';
 @import 'abstracts/variables';
 
+@import 'base/general';
+
 @import 'layout/header';
 @import 'layout/value_proposition';
-@import 'layout/_points.scss';
+@import 'layout/questions';
+@import 'layout/_solutions.scss';
+@import 'layout/confidence';
+@import 'layout/faqs';
+@import 'layout/pricing';
+@import 'layout/contact';
+
+@import 'components/solutions_cards';

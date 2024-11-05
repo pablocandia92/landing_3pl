@@ -1,0 +1,124 @@
+.confidence {
+    color: $mantis;
+    background: linear-gradient($black 85%, $forest-green , $mantis);
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__card {
+          position: relative;
+          margin-bottom: 20px;
+          padding: 15px;
+          width: 90%;
+          height: 250px;
+          border-radius: 14px;
+          z-index: 500;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 5px 10px 15px $mantis, -5px -10px 15px $white;
+          
+            
+          .bg {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 100%;
+            height: 240px;
+            z-index: 2;
+            background: rgba(255, 255, 255, .75);
+            backdrop-filter: blur(24px);
+            border-radius: 10px;
+            overflow: hidden;
+            outline: 2px solid white;
+          }
+          
+          .blob {
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: calc(250px/2);
+            border-radius: 50%;
+            background-color: $forest-green;
+            opacity: .6;
+            filter: blur(12px);
+            animation: blob-bounce 5s infinite ease;
+          }
+
+            header {
+                z-index: 10;
+                h6 {
+                    font-size: 1.5rem;
+                    color: $black;
+                    text-align: center;
+                    font-weight: 600;
+                    margin: 20px 0;
+                }
+            }
+
+            p {
+                z-index: 10;
+                font-size: 1.3rem;
+            }
+          
+          }
+          
+          
+          @keyframes blob-bounce {
+            0% {
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+            }
+          
+            25% {
+              transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+            }
+          
+            50% {
+              transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+            }
+          
+            75% {
+              transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+            }
+          
+            100% {
+              transform: translate(-100%, -100%) translate3d(0, 0, 0);
+            }
+          }
+          
+          
+    }
+}
+
+@media (min-width:992px) {
+  .confidence {
+
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      &__card{
+        width: 30%;
+        transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: rgb(250, 250, 250) 0.2em solid;
+
+        &:hover {
+          border: $mantis 0.2em solid;
+        }
+        .blob {
+          display: none;
+        }
+        .bg {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.faqs {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+        .blue {
+            background-color: $gunmetal;
+            color:$white
+        }
+
+
+        &__card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            height: 200px;
+            width: 90%;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            transition: 400ms transform, 400ms box-shadow, 400ms background-color;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            p.tip {
+                font-size: $card_title;
+                text-align: center;
+                font-weight: $card_title_weight;
+            }
+
+            p.second-text {
+                font-size: $card_text;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #333;
+            }
+
+
+        }
+    }
+}
+
+.faqs__cards:hover > .faqs__cards__card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (min-width:992px) {
+    .faqs {
+        &__cards {
+            flex-direction: row;
+            &__card {
+                width: 30%;
+                height: 270px;
+                justify-content: start;
+                padding: 10px;
+
+                p.tip {
+                    font-size: $card_title;
+                    text-align: center;
+                    font-weight: $card_title_weight;
+                }
+
+                p.second-text {
+                    font-size: $card_text;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

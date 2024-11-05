@@ -1,0 +1,37 @@
+.questions {
+    ul {
+        padding: 0;
+        padding-left: 2rem;
+    }
+
+    li {
+        color: $black;
+        font-size: 1.3rem;
+        position: relative;
+        margin-bottom: 15px;
+
+        &::before {
+            content: '▰';
+            position: absolute;
+            left: -1.5rem;
+            font-size: 1.2rem;
+            color: $forest-green;
+            
+        }
+    }
+}
+
+
+@media (min-width:992px) {
+    .questions {
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                width: 48%;
+            }
+        }
+    }
+}
