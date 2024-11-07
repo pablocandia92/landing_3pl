@@ -18,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/4b80fcba32.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -128,10 +130,43 @@
                     </div>
                     <div class="solutions__cards__card">
                         <h6>
-                            Optimización logística
+                            Optimización de Inventarios
                         </h6>
                         <p>
-                            Nuestras soluciones logísticas permiten ofrecer entregas más rápidas y eficientes, mejorando la satisfacción del cliente y reduciendo costos.
+                            Aseguramos que tus productos estén disponibles en el momento y lugar indicados, minimizando costos y maximizando eficiencia.
+                        </p>
+                    </div>
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Logística para B2B y B2C
+                        </h6>
+                        <p>
+                            Ofrecemos soluciones logísticas integrales, adaptadas tanto para empresas como para consumidores finales, para una cadena de suministro fluida.
+                        </p>
+                    </div>
+                    <!---->
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Empaque Personalizado para PR
+                        </h6>
+                        <p>
+                            Creamos empaques únicos y hechos a la medida que reflejan la esencia de tu marca y mejoran la experiencia del cliente.
+                        </p>
+                    </div>
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Excelencia en Atención al Cliente
+                        </h6>
+                        <p>
+                            Nos esforzamos en brindar una atención superior que crea relaciones duraderas y eleva la satisfacción de tus clientes.
+                        </p>
+                    </div>
+                    <div class="solutions__cards__card">
+                        <h6>
+                            Cumplimiento de Principio a Fin
+                        </h6>
+                        <p>
+                            Nos encargamos de todo el proceso, desde el pedido hasta la entrega final, para una experiencia sin complicaciones y orientada a la calidad.
                         </p>
                     </div>
                 </div>
@@ -173,15 +208,39 @@
     
         <div class="border_detail"></div>
         <section id="how-it-works" class="section how-it-works container-fluid pt-5 pb-5">
-            <header>
-                <h2 class="subtitle container">¿Cómo funciona?</h2>
-            </header>
-            <div class="container">
-                <p>Aquí puedes incluir un roadmap gráfico o una secuencia visual que explique los pasos del servicio.</p>
+                <header>
+                    <h2 class="subtitle">¿Cómo Funciona?</h2>
+                </header>
+            <div class="roadmap">
+                <div class="roadmap__step">
+                    <!-- <div class="roadmap__step__icon">
+                        <i class="fa-solid fa-boxes-packing fa-6x"></i>
+                    </div> -->
+                    <div class="roadmap__step__number">1</div>
+                    <p><strong>Recibimos tus productos:</strong> Almacenamos y aseguramos cada artículo que recibimos.</p>
+                </div>
+            
+                <div class="roadmap__step">
+                    <div class="roadmap__step__number">2</div>
+                    <p><strong>Almacenamiento Seguro y Punto de Retorno:</strong> Ofrecemos instalaciones seguras para tus productos y gestionamos devoluciones de Amazon como punto de retorno.</p>
+                </div>
+            
+                <div class="roadmap__step">
+                    <div class="roadmap__step__number">3</div>
+                    <p><strong>Control de Calidad y Etiquetado:</strong> Realizamos un control de calidad en muestras seleccionadas, etiquetamos cada artículo individualmente y verificamos el conteo de unidades.</p>
+                </div>
+            
+                <div class="roadmap__step">
+                    <div class="roadmap__step__number">4</div>
+                    <p><strong>Despacho a Almacenes de Amazon:</strong> Gestionamos el envío de tus productos a los almacenes de Amazon, cumpliendo con todos los requisitos logísticos y de etiquetado.</p>
+                </div>
+            </div>
+            <div class="roadmap_detail">
+                <p><strong>Nos Ocupamos de Todo el Proceso:</strong> Desde la recepción hasta la entrega final, administramos cada aspecto logístico para que puedas concentrarte en hacer crecer tu negocio sin preocupaciones.</p>
             </div>
         </section>
     
-        <div class="border_detail"></div>
+        <!-- <div class="border_detail"></div>
         <section id="faqs" class="section container">
             <header>
                 <h2 class="subtitle container">Preguntas Frecuentes (FAQs)</h2>
@@ -200,7 +259,7 @@
                     <p class="second-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, debitis?</p>
                 </div>
             </div>
-        </section>
+        </section> -->
     
         <div class="border_detail"></div>
         <section id="pricing" class="section pricing">
@@ -281,18 +340,56 @@
         </section>
 
         <div class="border_detail"></div>
-        <section id="contact" class="section contact">
-            <header>
-                <h2 class="subtitle container">Contacto</h2>
+        <section id="contact" class="section contact pt-5 pb-5">
+            <header class="container">
+                <h2 class="subtitle">¿Necesitás ayuda?</h2>
+                <p>¡Dejanos tus consultas y te estaremos contactando!</p>
             </header>
-            <div class="contact__form">
-
+            <div class="contact__form container">
+                <form action="">
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" placeholder="Dejanos tu nombre" required>
+                    </label>
+                    <label>
+                        <span>Apellido</span>
+                        <input type="text" placeholder="Dejanos tu apellido" required>
+                    </label>
+                    <label>
+                        <span>Correo electrónico</span>
+                        <input type="email" placeholder="Dejanos tu correo electrónico" required>
+                    </label>
+                    <label>
+                        <span>Mensaje</span>
+                        <textarea required>
+                        </textarea>
+                    </label>
+                    <button type="submit" class="contact__form__btn_submit">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="footer pt-5 pb-5">
+        <div class="border_detail_dark"></div>
+        <div class="footer__logo container mb-2">
+            <img src="./assets/img/logo-completo-sin-fondo-blanco.png" alt="">
+        </div>
+        <div class="footer__data container">
+            <address class="footer__data__address">
+                <p>Ives Estates, Florida 33179, United States</p>
+                <p>+1 (786) 767-4804</p>
+                <p><a href="mailto:fasttracklogistics3pl@gmail.com">fasttracklogistics3pl@gmail.com</a></p>
+            </address>
+            <div class="footer__data__schedule">
+                <h6>Horarios</h6>
+                <p>Lunes a Viernes: 9:00 - 18:00.</p>
+                <p>Sábados y Domingos cerrado.</p>
+            </div>
+        </div>
     </footer>
+    <a href="https://wa.me/message/DZU5XYD5KRTMD1" target="_blank" class="whatsapp">
+        <i class="fa-brands fa-3x fa-whatsapp"></i>
+    </a>
     
     </body>
 </html>

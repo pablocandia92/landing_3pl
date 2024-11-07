@@ -1,0 +1,192 @@
+.how-it-works {
+    .roadmap {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-left: 20px;
+
+
+
+        &__step {
+            display: flex;
+            align-items: center;
+            padding-bottom: 30px;
+            position: relative;
+
+            &__icon {
+                display: none;
+            }
+
+            &:first-child{
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    bottom: 0;
+                    width: 2px;
+                    background-color: $forest-green;
+                }
+            }
+
+            &:last-child{
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 20px;
+                    top: 0;
+                    bottom: 50%;
+                    width: 2px;
+                    background-color: $forest-green;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 20px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: $forest-green;
+            }
+
+
+
+            &__number {
+                font-size: 1.5em;
+                background-color: $forest-green;
+                color: $white;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                position: relative;
+                z-index: 1;
+            }
+
+            p {
+                width: 85%;
+                font-size: 1.2rem;
+                margin: 0;
+                padding-left: 10px;
+                line-height: 1.5;
+            }
+
+
+
+        }
+    }
+
+    .roadmap_detail {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:992px) {
+    .how-it-works {
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding-left: 20px;
+        
+            &__step {
+                display: flex;
+                align-items: center;
+                padding-bottom: 30px;
+                position: relative;
+        
+                /* Línea que conecta los números */
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    bottom: 0;
+                    width: 2px;
+                    background-color: $forest-green;
+                    z-index: 0;
+                    transform: translateX(-50%);
+                }
+        
+                &__number {
+                    font-size: 1.5em;
+                    background-color: $forest-green;
+                    color: $white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+                }
+        
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0 15px;
+                    line-height: 1.5;
+                    position: relative;
+                    z-index: 1;
+                }
+        
+                &:first-child {
+                    &::before {
+                        top: 50%; /* La línea vertical empieza en el centro del primer paso */
+                        bottom: 0;
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        -moz-border-radius: 7.5px;
+                        -webkit-border-radius: 7.5px;
+                        border-radius: 7.5px;
+                        background-color: #69b6d5;
+                    }
+            
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        bottom: 50%; /* La línea horizontal estará a la mitad de altura */
+                        width: 20px; /* Longitud de la "curva" horizontal */
+                        height: 2px;
+                        background-color: $forest-green;
+                        transform: translateX(50%); /* Desplaza la línea hacia la derecha */
+                    }
+                }
+
+                &:nth-child(odd) {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    .roadmap__step__number {
+                        order: 1;
+                        margin-right: 15px;
+                    }
+                    p {
+                        order: 2;
+                    }
+
+                }
+        
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                    .roadmap__step__number {
+                        order: 2;
+                        margin-left: 15px;
+                    }
+                    p {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+}

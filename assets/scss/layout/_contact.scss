@@ -1,4 +1,151 @@
 .contact {
     background-color: $black;
     color: $mantis;
+
+
+    header {
+        margin-bottom: 50px;
+        h2 {
+            color: $mantis;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+
+    &__form {
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            label {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+    
+                span {
+                    margin-bottom: 5px;
+                    
+                    &::after {
+                        content: '*';
+                        color: $mantis;
+                    }
+                }
+            }
+    
+            input {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid $mantis;
+                color: $white;
+                padding: 10px;
+                caret-color: $white;
+                font-size: 1.1rem;
+            }
+    
+            textarea {
+                height: 80px;
+                background-color: transparent;
+                outline: 1px solid $mantis;
+                border: none;
+                color: $white;
+                padding: 3px;
+                caret-color: $white;
+                resize: vertical;
+            }
+
+
+        }
+
+        &__btn_submit {
+            margin-top: 20px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            background: linear-gradient(to bottom, $forest-green, $mantis);
+            color: $white;
+            font-family: "Segoe UI", sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            padding: 14px 28px;
+            cursor: pointer;
+            animation: button-shimmer 2s infinite;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: linear-gradient(to bottom, $mantis, $mantis);
+                animation: button-particles 1s ease-in-out infinite;
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+
 }
+
+@media (min-width:992px) {
+    .contact {
+        header {
+            h2 {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__form {
+            form {
+                label {
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                }
+                
+                input {
+                    width: 400px;
+                    border: 1px solid $mantis
+                }
+                textarea {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes button-shimmer {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  
+@keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }

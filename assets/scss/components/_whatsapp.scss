@@ -1,0 +1,29 @@
+.whatsapp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99999;
+    border-radius: 100%;
+    background-color: $mantis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+        color: $white;
+    }
+}
+
+
+@media (min-width:992px) {
+    .whatsapp {
+        bottom: 40px;
+        right: 40px;
+
+        &:hover {
+            background-color: $forest-green;
+        }
+    }
+}
