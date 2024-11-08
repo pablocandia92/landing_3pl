@@ -10,6 +10,7 @@
         width: 100%;
 
         img {
+            transform: translateX(-8px);
             max-width: 100%;
             max-height: 100%;
         }
@@ -41,6 +42,11 @@
     border: 1px solid #6CB860;
     transition: all 0.3s;
     box-shadow: 6px 6px 12px #108239, -6px -6px 12px #108239;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .cta-button:active {
@@ -63,9 +69,36 @@
         display: flex;
         flex-direction: column;
         &__logo {
-            height: 150px;
+            height: 170px;
+            img {
+                transform: translateX(-18px);
+            }
 
 
+        }
+
+        &__text {
+            .value-text {
+                font-family: "Montserrat", sans-serif;
+                margin-top: -20px;
+            
+                .headline {
+                    font-size: 3.2rem;
+                    font-weight: 550;
+                    letter-spacing: 1px;
+                    text-shadow: -5px 4px 18px $mantis;
+                }
+            
+                .description {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        &__media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
@@ -79,6 +112,67 @@
         }
         &__media {
             width: 45%;
+        }
+    }
+
+    .cta-button{
+        all: unset;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 0.6em 2em;
+        border: $mantis solid 0.15em;
+        border-radius: 0.25em;
+        color: $mantis;
+        font-size: 1.5em;
+        font-weight: 600;
+        cursor: pointer;
+        overflow: hidden;
+        transition: border 300ms, color 300ms;
+        user-select: none;
+
+        p {
+            z-index: 1;
+        }
+        &:hover {
+            color: $black;
+        }
+        &:active {
+            border-color: $mantis;
+        }
+
+        &::after, &::before {
+            content: "";
+            position: absolute;
+            width: 120%;
+            aspect-ratio: 1;
+            background: $mantis;
+            opacity: 70%;
+            border-radius: 50%;
+            transition: transform 500ms, background 300ms;
+        }
+
+        &::before {
+            left: 0;
+            transform: translateX(-13em);
+        }
+
+        &::after {
+            right: 0;
+            transform: translateX(13em);
+        }
+
+        &:hover::before {
+            transform: translateX(-1em);
+        }
+
+        &:hover::after {
+            transform: translateX(1em);
+        }
+
+        &:active::before,
+        &:active::after {
+            background: $forest-green;
         }
     }
 }

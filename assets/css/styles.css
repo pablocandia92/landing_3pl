@@ -156,6 +156,7 @@ button {
   width: 100%;
 }
 .value-proposition__logo img {
+  transform: translateX(-8px);
   max-width: 100%;
   max-height: 100%;
 }
@@ -185,6 +186,10 @@ button {
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #108239, -6px -6px 12px #108239;
 }
+.cta-button p {
+  padding: 0;
+  margin: 0;
+}
 
 .cta-button:active {
   color: #000000;
@@ -207,7 +212,28 @@ button {
     flex-direction: column;
   }
   .value-proposition__logo {
-    height: 150px;
+    height: 170px;
+  }
+  .value-proposition__logo img {
+    transform: translateX(-18px);
+  }
+  .value-proposition__text .value-text {
+    font-family: "Montserrat", sans-serif;
+    margin-top: -20px;
+  }
+  .value-proposition__text .value-text .headline {
+    font-size: 3.2rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+    text-shadow: -5px 4px 18px #6CB860;
+  }
+  .value-proposition__text .value-text .description {
+    font-size: 1.3rem;
+  }
+  .value-proposition__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .value-proposition .container {
     display: flex;
@@ -219,6 +245,58 @@ button {
   }
   .value-proposition__media {
     width: 45%;
+  }
+  .cta-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.6em 2em;
+    border: #6CB860 solid 0.15em;
+    border-radius: 0.25em;
+    color: #6CB860;
+    font-size: 1.5em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+  }
+  .cta-button p {
+    z-index: 1;
+  }
+  .cta-button:hover {
+    color: #000000;
+  }
+  .cta-button:active {
+    border-color: #6CB860;
+  }
+  .cta-button::after, .cta-button::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    aspect-ratio: 1;
+    background: #6CB860;
+    opacity: 70%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  .cta-button::before {
+    left: 0;
+    transform: translateX(-13em);
+  }
+  .cta-button::after {
+    right: 0;
+    transform: translateX(13em);
+  }
+  .cta-button:hover::before {
+    transform: translateX(-1em);
+  }
+  .cta-button:hover::after {
+    transform: translateX(1em);
+  }
+  .cta-button:active::before, .cta-button:active::after {
+    background: #108239;
   }
 }
 .questions ul {
