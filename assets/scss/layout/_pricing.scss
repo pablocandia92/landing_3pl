@@ -123,3 +123,44 @@
     list-style: none;
     margin-bottom: 10px;
   }
+
+
+@media (min-width:992px) {
+    /* Display both cards side by side */
+    .card-area .cards {
+      display: flex;
+      width: 100%; /* Adjust as needed to fit both cards */
+  }
+  .cards .row {
+      width: 50%; /* Show each card at 50% width */
+  }
+
+  #tab-2:checked ~ .card-area .cards .row-1 {
+    margin: 0;
+  }
+  
+  /* Remove transitions and sliding effect */
+  .cards .row-1 {
+      margin-left: 0;
+      transition: none;
+  }
+
+  .wrapper {
+    header {
+      display: none;
+    }
+
+    width: 100%;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .wrapper header {
+      display: none; /* Hide the header with tabs on desktop */
+  }
+
+  .row {
+    border: 2px solid red;
+  }
+}
