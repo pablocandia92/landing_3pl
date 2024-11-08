@@ -176,6 +176,14 @@
     .row {
       width: 40%;
       box-shadow: 5px 10px 15px $mantis, -5px -10px 15px $white;
+      border-radius: 14px;
+      transition: box-shadow 0.5s, transform 0.5s;
+
+
+      &:hover {
+        box-shadow: 5px 10px 15px $gunmetal, -5px -10px 15px $white;
+        transform: scale(1.1);
+      }
   
       .price-details {
         z-index: 10;
@@ -191,6 +199,7 @@
           color: $white;
           background-color: $forest-green;
           letter-spacing: 2px;
+
 
           &::before,
           &::after {
@@ -222,7 +231,7 @@
       }
 
       .features {
-        height: fit-content;
+        height: 370px;
 
         li {
           font-size: 1.1rem;

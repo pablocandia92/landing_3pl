@@ -1,0 +1,13 @@
+@media (min-width:992px) {
+    .pro {
+        h3 {
+            text-shadow: -5px 4px 20px $white;
+        }
+
+        &__feature {
+            color: $forest-green;
+            text-shadow: -2px 0px 16px $forest-green;
+
+        }
+    }
+}

@@ -893,6 +893,12 @@ header .slider {
   .cards .row {
     width: 40%;
     box-shadow: 5px 10px 15px #6CB860, -5px -10px 15px #ffffff;
+    border-radius: 14px;
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+  .cards .row:hover {
+    box-shadow: 5px 10px 15px #0E2327, -5px -10px 15px #ffffff;
+    transform: scale(1.1);
   }
   .cards .row .price-details {
     z-index: 10;
@@ -932,7 +938,7 @@ header .slider {
     transform: scaleX(-1); /* flip horizontally */
   }
   .cards .row .features {
-    height: fit-content;
+    height: 370px;
   }
   .cards .row .features li {
     font-size: 1.1rem;
@@ -1122,6 +1128,15 @@ header .slider {
     justify-content: start;
     width: 260px;
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .pro h3 {
+    text-shadow: -5px 4px 20px #ffffff;
+  }
+  .pro__feature {
+    color: #108239;
+    text-shadow: -2px 0px 16px #108239;
   }
 }
 .whatsapp {
