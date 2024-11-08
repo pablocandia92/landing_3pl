@@ -54,7 +54,6 @@ button {
 .border_detail {
   width: 50%;
   border-top: 4px solid #6CB860;
-  margin-bottom: 60px;
   margin-top: 20px;
 }
 
@@ -62,6 +61,10 @@ button {
   width: 50%;
   border-top: 4px solid #6CB860;
   margin-bottom: 20px;
+}
+
+.section {
+  padding-top: 120px;
 }
 
 @media (min-width: 992px) {
@@ -825,6 +828,9 @@ header .slider {
   position: relative;
   font-family: "Noto Sans", sans-serif;
 }
+.price-details h3 {
+  display: none;
+}
 
 .price-details .price::after {
   content: "/mes";
@@ -854,13 +860,15 @@ header .slider {
     display: flex;
     width: 100%; /* Adjust as needed to fit both cards */
   }
+  .card-area {
+    overflow: visible;
+  }
   .cards .row {
     width: 50%; /* Show each card at 50% width */
   }
   #tab-2:checked ~ .card-area .cards .row-1 {
     margin: 0;
   }
-  /* Remove transitions and sliding effect */
   .cards .row-1 {
     margin-left: 0;
     transition: none;
@@ -875,10 +883,61 @@ header .slider {
     display: none;
   }
   .wrapper header {
-    display: none; /* Hide the header with tabs on desktop */
+    display: none;
   }
-  .row {
-    border: 2px solid red;
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .cards .row {
+    width: 40%;
+    box-shadow: 5px 10px 15px #6CB860, -5px -10px 15px #ffffff;
+  }
+  .cards .row .price-details {
+    z-index: 10;
+  }
+  .cards .row .price-details h3 {
+    text-transform: uppercase;
+    display: block;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto 20px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #108239;
+    letter-spacing: 2px;
+  }
+  .cards .row .price-details h3::before, .cards .row .price-details h3::after {
+    content: "";
+    width: 80px;
+    height: 100%;
+    background-color: #108239;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+    background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  .cards .row .price-details h3::before {
+    left: -60px;
+  }
+  .cards .row .price-details h3::after {
+    right: -60px;
+    transform: scaleX(-1); /* flip horizontally */
+  }
+  .cards .row .features {
+    height: fit-content;
+  }
+  .cards .row .features li {
+    font-size: 1.1rem;
+    list-style: none;
+    margin-bottom: 10px;
   }
 }
 .contact {

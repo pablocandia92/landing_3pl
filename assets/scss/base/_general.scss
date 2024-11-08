@@ -11,7 +11,6 @@
 .border_detail {
     width: 50%;
     border-top: 4px solid $mantis;
-    margin-bottom: 60px;
     margin-top: 20px;
 }
 
@@ -19,6 +18,10 @@
     width: 50%;
     border-top: 4px solid $mantis;
     margin-bottom: 20px;
+}
+
+.section {
+    padding-top: 120px;
 }
 
 //todo  animacion

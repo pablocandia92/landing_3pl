@@ -98,11 +98,18 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #e6e6e6;
   }
-  .price-details .price {
+  .price-details {
+    .price {
     font-size: 65px;
     font-weight: 600;
     position: relative;
     font-family: "Noto Sans", sans-serif;
+
+    }
+    h3 {
+      display: none;
+    }
+  
   }
 
   .price-details .price::after {
@@ -131,6 +138,9 @@
       display: flex;
       width: 100%; /* Adjust as needed to fit both cards */
   }
+  .card-area {
+    overflow: visible;
+  }
   .cards .row {
       width: 50%; /* Show each card at 50% width */
   }
@@ -139,7 +149,6 @@
     margin: 0;
   }
   
-  /* Remove transitions and sliding effect */
   .cards .row-1 {
       margin-left: 0;
       transition: none;
@@ -157,10 +166,70 @@
   }
   
   .wrapper header {
-      display: none; /* Hide the header with tabs on desktop */
+      display: none;
   }
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 
-  .row {
-    border: 2px solid red;
+    .row {
+      width: 40%;
+      box-shadow: 5px 10px 15px $mantis, -5px -10px 15px $white;
+  
+      .price-details {
+        z-index: 10;
+        h3 {
+          text-transform: uppercase;
+          display: block;
+          width: 90%;
+          text-align: center;
+          position: relative;
+          margin: 0 auto 20px;
+          padding: 10px 5px;
+          text-align: center;
+          color: $white;
+          background-color: $forest-green;
+          letter-spacing: 2px;
+
+          &::before,
+          &::after {
+            content: '';
+            width: 80px;
+            height: 100%;
+            background-color: $forest-green;
+
+            position: absolute;
+            z-index: -1;
+            top: 20px;
+
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+
+            background-image: linear-gradient(45deg, transparent 50%, $black 50%);
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: bottom right;
+          }
+
+          &::before{
+            left: -60px;
+          }
+          &::after{
+            right: -60px;
+            transform: scaleX(-1); /* flip horizontally */
+          }
+        }
+      }
+
+      .features {
+        height: fit-content;
+
+        li {
+          font-size: 1.1rem;
+          list-style: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }
