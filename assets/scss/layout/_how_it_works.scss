@@ -97,8 +97,80 @@
             &__step {
                 display: flex;
                 align-items: center;
-                padding-bottom: 30px;
+                padding-bottom: 70px;
                 position: relative;
+
+                &__icon {
+                    display: block;
+                    color: $gunmetal;
+                    width: calc(50% - 20px);
+                }
+
+                &__number {
+                    font-size: 1.5em;
+                    background-color: $forest-green;
+                    color: $white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    z-index: 1;
+
+                    i{
+                        margin: 0;
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.5;
+                    position: relative;
+                    z-index: 1;
+                    width: calc(50% - 20px);
+                }
+
+                &:nth-child(odd) {
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .roadmap__step__number {
+                        margin: 0;
+                    }
+    
+                    .roadmap__step__icon {
+                        color: $mantis;
+                        text-align: end;
+                        padding-right: 20px;
+                    }
+
+                    p {
+                        padding-left: 20px;
+                    }
+                    
+                }
+        
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                    .roadmap__step__number {
+                        order: 2;
+                        margin: 0;
+                    }
+                    .roadmap__step__icon {
+                        color: $gunmetal;
+                        order: 1;
+                        padding-left: 20px;
+                    }
+                    p {
+                        order: 3;
+                        padding-right: 20px;
+                    }
+                }
         
                 /* Línea que conecta los números */
                 &::before {
@@ -113,79 +185,36 @@
                     transform: translateX(-50%);
                 }
         
-                &__number {
-                    font-size: 1.5em;
-                    background-color: $forest-green;
-                    color: $white;
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    z-index: 1;
-                }
-        
-                p {
-                    font-size: 1.2rem;
-                    margin: 0;
-                    padding: 0 15px;
-                    line-height: 1.5;
-                    position: relative;
-                    z-index: 1;
-                }
         
                 &:first-child {
                     &::before {
-                        top: 50%; /* La línea vertical empieza en el centro del primer paso */
-                        bottom: 0;
-                        content: '';
-                        display: inline-block;
-                        width: 15px;
-                        height: 15px;
-                        -moz-border-radius: 7.5px;
-                        -webkit-border-radius: 7.5px;
-                        border-radius: 7.5px;
-                        background-color: #69b6d5;
-                    }
-            
-                    &::after {
                         content: "";
                         position: absolute;
                         left: 50%;
-                        bottom: 50%; /* La línea horizontal estará a la mitad de altura */
-                        width: 20px; /* Longitud de la "curva" horizontal */
-                        height: 2px;
+                        top: 20%;
+                        bottom: 0;
+                        width: 2px;
                         background-color: $forest-green;
-                        transform: translateX(50%); /* Desplaza la línea hacia la derecha */
+                        z-index: 0;
+                        transform: translateX(-50%);
                     }
                 }
 
-                &:nth-child(odd) {
-                    flex-direction: row;
-                    justify-content: flex-start;
-                    .roadmap__step__number {
-                        order: 1;
-                        margin-right: 15px;
+                &:last-child {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        bottom: 70%;
+                        width: 2px;
+                        background-color: $forest-green;
+                        z-index: 0;
+                        transform: translateX(-50%);
                     }
-                    p {
-                        order: 2;
-                    }
+                }
 
-                }
-        
-                &:nth-child(even) {
-                    flex-direction: row-reverse;
-                    justify-content: flex-end;
-                    .roadmap__step__number {
-                        order: 2;
-                        margin-left: 15px;
-                    }
-                    p {
-                        order: 1;
-                    }
-                }
+
             }
         }
     }
