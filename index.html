@@ -6,6 +6,9 @@
     <title>Fast Track Logistics</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <meta name=”theme-color” content=”#108239”>
+    <meta name="description" content="Garantizamos la entrega segura, rápida y confiable de tus envíos con soluciones logísticas personalizadas. Optimiza tus operaciones logísticas con nosotros.">
+    <meta name="keywords" content="soluciones logísticas, envíos seguros, logística personalizada, entrega rápida, gestión de inventario, logística B2B y B2C, empaque personalizado">
+    <meta name="robots" content="index, follow">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -22,9 +25,9 @@
 
     <main>
         <!-- VALUE PROPOSITION -->
-        <section class="value-proposition container-fluid">
+        <section class="value-proposition container-fluid" aria-label="Propuesta de valor de Fast Track Logistics">
             <div class="value-proposition__logo container">
-                <img src="./assets/img/logo-completo-sin-fondo-blanco.svg" alt="">
+                <img src="./assets/img/logo-completo-sin-fondo-blanco.svg" alt="Logo de Fast Track Logistics - Soluciones logísticas personalizadas">
             </div>
             <div class="value-proposition__container container">
                 <div class="value-proposition__text">
@@ -32,69 +35,70 @@
                         <h1 class="headline mb-4">La seguridad de tus envíos es nuestro compromiso</h1>
                         <p class="description">Ofrecemos soluciones logísticas personalizadas que garantizan la entrega segura, rápida y confiable de tus productos, optimizando cada paso del proceso para que tu negocio funcione sin interrupciones.</p>
                     </div>
-                    <button class="cta-button mb-5">
-                        <p>¡Empieza ahora!</p>
-                    </button>
+                    <div class="cta-button-container">
+                        <a class="cta-button mb-5" href="#contact">
+                            <p>¡Empieza ahora!</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="value-proposition__media media-container mb-4 pb-5">
-                    <video class="promo-video" controls>
+                    <video class="promo-video" controls aria-label="Video de presentación de Fast Track Logistics">
                         <source src="./assets/video/20.webm" type="video/mp4">
+                        Tu navegador no soporta videos. Mira cómo nuestras soluciones logísticas pueden ayudarte.
                     </video>
                 </div>
             </div>
         </section>
 
         <!-- Navbar -->
-        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top" aria-label="Barra de navegación principal de Fast Track Logistics">
             <div class="container-fluid">
-                <a id="navbar-logo" class="navbar-brand" href="#">
-                    <img src="./assets/img/icono-sin-fondo.svg" alt="">
+                <a id="navbar-logo" class="navbar-brand" href="#" aria-label="Logo de Fast Track Logistics - Inicio">
+                    <img src="./assets/img/icono-sin-fondo.svg" alt="Logo de Fast Track Logistics">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#solutions">Nuestras soluciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how-it-works">¿Cómo funciona?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Membresias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-
-                    </ul>
-                    </form>
-                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-label="Menú de navegación de Fast Track Logistics">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menú"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#solutions" title="Ver Nuestras Soluciones de Logística" aria-label="Nuestras soluciones de logística">Nuestras soluciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how-it-works" title="Conoce cómo funciona Fast Track Logistics" aria-label="Conoce cómo funciona">¿Cómo funciona?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing" title="Ver Membresías de Fast Track Logistics" aria-label="Membresías de Fast Track Logistics">Membresías</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" title="Contáctanos en Fast Track Logistics" aria-label="Contacto de Fast Track Logistics">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <!--QUESTIONS-->
         <div class="border_detail"></div>
-        <section class="questions container-fluid section pb-5">
+        <section class="questions container-fluid section pb-5" aria-labelledby="questions-title" aria-label="Preguntas comunes sobre problemas de logística y envíos">
             <header>
-                <h2 class="subtitle container">¿Te ha pasado alguna vez...?</h2>
+                <h2 id="questions-title" class="subtitle container">¿Te ha pasado alguna vez...?</h2>
             </header>
             <div class="questions__items container">
                 <ul>
-                    <li>¿Estás cansado de que se pierdan tus paquetes?</li>
-                    <li>¿Tus clientes se quejan porque sus productos llegan dañados?</li>
-                    <li>¿Lidiando con retrasos constantes en las entregas?</li>
+                    <li>¿Estás cansado de que se pierdan tus paquetes o envíos?</li>
+                    <li>¿Tus clientes se quejan porque sus productos llegan dañados o en malas condiciones?</li>
+                    <li>¿Lidiando con retrasos constantes en las entregas y plazos incumplidos?</li>
                 </ul>
                 <ul>
-                    <li>¿Te preocupa la falta de seguimiento y transparencia en tus envíos?</li>
-                    <li>¿Perdiendo clientes por no ofrecer entregas rápidas y seguras?</li>
-                    <li>¿Te cuesta coordinar envíos multicanal y gestionar tu inventario?</li>
+                    <li>¿Te preocupa la falta de seguimiento y transparencia en el estado de tus envíos?</li>
+                    <li>¿Estás perdiendo clientes por no ofrecer entregas rápidas y seguras?</li>
+                    <li>¿Te cuesta coordinar envíos multicanal y gestionar tu inventario eficientemente?</li>
                 </ul>
             </div>
         </section>
@@ -102,144 +106,137 @@
 
         <!--SOLUTIONS-->
         <div class="border_detail"></div>
-        <section id="solutions" class="section solutions container-fluid pb-5">
+        <section id="solutions" class="section solutions container-fluid pb-5" aria-labelledby="solutions-title" aria-label="Sección de soluciones logísticas personalizadas">
             <header>
-                <h2 class="subtitle container">Nuestras soluciones</h2>
+                <h2 id="solutions-title" class="subtitle container">Nuestras soluciones</h2>
             </header>
-                <div class="solutions__cards container">
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Entrega rápida y confiable
-                        </h6>
-                        <p>
-                            Garantizamos entregas en <strong>1-2 días</strong> gracias a nuestra red de almacenes certificados, ayudando a cumplir con los plazos que tus clientes esperan.
-                        </p>
-                    </div>
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Cuidado del producto
-                        </h6>
-                        <p>
-                            Con un <strong>99.5%</strong> de precisión en la gestión de inventario, aseguramos que tus productos lleguen en perfectas condiciones, protegiendo la reputación de tu marca.
-                        </p>
-                    </div>
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Optimización de inventarios
-                        </h6>
-                        <p>
-                            Aseguramos que tus productos estén disponibles en el momento y lugar indicados, minimizando costos y maximizando eficiencia.
-                        </p>
-                    </div>
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Logística para B2B y B2C
-                        </h6>
-                        <p>
-                            Ofrecemos soluciones logísticas integrales, adaptadas tanto para empresas como para consumidores finales, para una cadena de suministro fluida.
-                        </p>
-                    </div>
-                    <!---->
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Empaque personalizado para PR
-                        </h6>
-                        <p>
-                            Creamos empaques únicos y hechos a la medida que reflejan la esencia de tu marca y mejoran la experiencia del cliente.
-                        </p>
-                    </div>
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Excelencia en atención al cliente
-                        </h6>
-                        <p>
-                            Nos esforzamos en brindar una atención superior que crea relaciones duraderas y eleva la satisfacción de tus clientes.
-                        </p>
-                    </div>
-                    <div class="solutions__cards__card">
-                        <h6>
-                            Cumplimiento de principio a fin
-                        </h6>
-                        <p>
-                            Nos encargamos de todo el proceso, desde el pedido hasta la entrega final, para una experiencia sin complicaciones y orientada a la calidad.
-                        </p>
-                    </div>
+            <div class="solutions__cards container">
+                <div class="solutions__cards__card">
+                    <h6>Entrega rápida y confiable</h6>
+                    <p>
+                        Garantizamos entregas en <strong>1-2 días</strong> a través de nuestra red de almacenes certificados, asegurando tiempos de entrega óptimos que cumplen con las expectativas de tus clientes.
+                    </p>
                 </div>
+                <div class="solutions__cards__card">
+                    <h6>Cuidado del producto</h6>
+                    <p>
+                        Con una precisión del <strong>99.5%</strong> en la gestión de inventario, garantizamos que tus productos se mantengan en perfectas condiciones, protegiendo la reputación de tu marca y mejorando la confianza de tus clientes.
+                    </p>
+                </div>
+                <div class="solutions__cards__card">
+                    <h6>Optimización de inventarios</h6>
+                    <p>
+                        Aseguramos la disponibilidad de tus productos en el momento y lugar precisos, optimizando costos y maximizando la eficiencia en la cadena de suministro.
+                    </p>
+                </div>
+                <div class="solutions__cards__card">
+                    <h6>Logística para B2B y B2C</h6>
+                    <p>
+                        Brindamos soluciones logísticas adaptadas tanto para empresas como para consumidores finales, garantizando una cadena de suministro fluida y efectiva.
+                    </p>
+                </div>
+                <div class="solutions__cards__card">
+                    <h6>Empaque personalizado para PR</h6>
+                    <p>
+                        Diseñamos empaques a la medida que capturan la esencia de tu marca y mejoran la experiencia del cliente, ideales para campañas de relaciones públicas.
+                    </p>
+                </div>
+                <div class="solutions__cards__card">
+                    <h6>Excelencia en atención al cliente</h6>
+                    <p>
+                        Nos enfocamos en brindar una atención superior que fomente relaciones duraderas y maximice la satisfacción de tus clientes.
+                    </p>
+                </div>
+                <div class="solutions__cards__card">
+                    <h6>Cumplimiento de principio a fin</h6>
+                    <p>
+                        Nos encargamos de cada paso del proceso, desde la recepción del pedido hasta la entrega final, ofreciendo una experiencia sin complicaciones y de alta calidad.
+                    </p>
+                </div>
+            </div>
         </section>
     
         <!--WHY-->
-        <div class="border_detail"></div>
-        <section class="section container-fluid pb-5">
+        <section class="section container-fluid pb-5" aria-labelledby="why-choose-us" aria-label="Razones para elegir nuestros servicios logísticos">
             <header>
-                <h2 class="subtitle container">¿Por qué elegirnos?</h2>
+                <h2 id="why-choose-us" class="subtitle container">¿Por qué elegirnos?</h2>
             </header>
             <div class="confidence__cards container">
-                <div class="confidence__cards__card">
+                <div class="confidence__cards__card" aria-label="Confianza de los clientes activos">
                     <div class="bg"></div>
                     <div class="blob"></div>
                     <header>
                         <h6>Clientes activos</h6>
                     </header>
-                    <p>Más de <strong>400 clientes activos</strong> confían en nosotros para sus operaciones logísticas diarias.</p>
+                    <p>Más de <strong>1000 clientes activos</strong> confían en nosotros para sus operaciones logísticas diarias, asegurando la continuidad y seguridad de sus envíos.</p>
                 </div>
-                <div class="confidence__cards__card">
+                <div class="confidence__cards__card" aria-label="Experiencia en el sector">
                     <div class="bg"></div>
                     <div class="blob"></div>
                     <header>
                         <h6>Experiencia</h6>
                     </header>
-                    <p><strong>8 años de experiencia</strong> en logística, cobertura en más del <strong>90%</strong> del territorio nacional.</p>
+                    <p>Con <strong>8 años de experiencia</strong> en logística y una cobertura que alcanza el <strong>90%</strong> del territorio nacional, ofrecemos servicios confiables y accesibles para empresas de todo tipo.</p>
                 </div>
-                <div class="confidence__cards__card">
+                <div class="confidence__cards__card" aria-label="Satisfacción de clientes recomendándonos">
                     <div class="bg"></div>
                     <div class="blob"></div>
                     <header>
                         <h6>Recomendaciones</h6>
                     </header>
-                    <p>El <strong>95%</strong> de nuestros clientes <strong>recomiendan</strong> nuestros servicios por nuestra confiabilidad.</p>
+                    <p>El <strong>95%</strong> de nuestros clientes nos <strong>recomiendan</strong> por nuestra confiabilidad y atención al detalle, reafirmando nuestro compromiso con la satisfacción del cliente.</p>
                 </div>
-
             </div>
         </section>
     
         <!--HOW IT WORKS-->
         <div class="border_detail"></div>
-        <section id="how-it-works" class="section how-it-works container pb-5">
-                <header>
-                    <h2 class="subtitle">¿Cómo Funciona?</h2>
-                </header>
+        <section id="how-it-works" class="section how-it-works container pb-5" aria-labelledby="how-it-works-title">
+            <header>
+                <h2 id="how-it-works-title" class="subtitle">¿Cómo Funciona?</h2>
+            </header>
             <div class="roadmap">
-                <div class="roadmap__step">
+                <div class="roadmap__step" aria-label="Paso 1: Recepción de productos">
                     <div class="roadmap__step__icon">
-                        <i class="fa-solid fa-boxes-packing fa-6x"></i>
+                        <i class="fa-solid fa-boxes-packing fa-6x" aria-hidden="true"></i>
                     </div>
                     <div class="roadmap__step__number">1</div>
                     <p><strong>Recibimos tus productos:</strong> almacenamos y aseguramos cada artículo que recibimos.</p>
                 </div>
-            
-                <div class="roadmap__step">
+                
+                <div class="roadmap__step" aria-label="Paso 2: Almacenamiento seguro y devoluciones">
                     <div class="roadmap__step__icon">
-                        <i class="fa-solid fa-warehouse fa-6x"></i>
+                        <i class="fa-solid fa-warehouse fa-6x" aria-hidden="true"></i>
                     </div>
                     <div class="roadmap__step__number">2</div>
                     <p><strong>Almacenamiento seguro y punto de retorno:</strong> ofrecemos instalaciones seguras para tus productos y gestionamos devoluciones de Amazon como punto de retorno.</p>
                 </div>
-            
-                <div class="roadmap__step">
+                
+                <div class="roadmap__step" aria-label="Paso 3: Control de calidad y etiquetado">
                     <div class="roadmap__step__icon">
-                        <i class="fa-solid fa-thumbs-up fa-6x"></i>
+                        <i class="fa-solid fa-thumbs-up fa-6x" aria-hidden="true"></i>
                     </div>
                     <div class="roadmap__step__number">3</div>
                     <p><strong>Control de calidad y etiquetado:</strong> realizamos un control de calidad en muestras seleccionadas, etiquetamos cada artículo individualmente y verificamos el conteo de unidades.</p>
                 </div>
-            
-                <div class="roadmap__step">
+                
+                <div class="roadmap__step" aria-label="Paso 4: Despacho a almacenes de Amazon">
                     <div class="roadmap__step__icon">
-                        <i class="fa-brands fa-amazon fa-6x"></i>
-                        <i class="fa-brands fa-shopify fa-6x"></i>
+                        <i class="fa-brands fa-amazon fa-4x" aria-hidden="true"></i>
+                        <i class="fa-brands fa-shopify fa-4x" aria-hidden="true"></i>
+                        <i class="fa-brands fa-tiktok fa-4x" aria-hidden="true"></i>
+                        <div class="roadmap__step__icon__img_container">
+                            <img src="./assets/img/logos/Etsy_logo.svg" alt="Etsy Logo">
+                        </div>
+                        <div class="roadmap__step__icon__img_container">
+                            <img src="./assets/img/logos/Walmart_logo.svg" alt="Walmart Logo">
+                        </div>
+                        <div class="roadmap__step__icon__img_container">
+                            <img src="./assets/img/logos/wish_logo.svg" alt="Wish Logo">
+                        </div>
                     </div>
                     <div class="roadmap__step__number">4</div>
-                    <p><strong>Despacho a almacenes de amazon:</strong> gestionamos el envío de tus productos a los almacenes de Amazon, cumpliendo con todos los requisitos logísticos y de etiquetado.</p>
+                    <p><strong>Despacho a almacenes de Amazon:</strong> gestionamos el envío de tus productos a los almacenes de Amazon, cumpliendo con todos los requisitos logísticos y de etiquetado.</p>
                 </div>
             </div>
             <div class="roadmap_detail">
@@ -247,112 +244,64 @@
             </div>
         </section>
     
-        <!-- <div class="border_detail"></div>
-        <section id="faqs" class="section container">
-            <header>
-                <h2 class="subtitle container">Preguntas Frecuentes (FAQs)</h2>
-            </header>
-            <div class="faqs__cards">
-                <div class="faqs__cards__card blue">
-                    <p class="tip">¿Cuál es el tiempo de entrega?</p>
-                    <p class="second-text">En la mayoría de los casos, nuestros envíos llegan en 1-2 días.</p>
-                </div>
-                <div class="faqs__cards__card blue">
-                    <p class="tip">¿Cómo garantizan la seguridad de los productos?</p>
-                    <p class="second-text">Gracias a un sistema avanzado de gestión de inventario con un 99.5% de precisión.</p>
-                </div>
-                <div class="faqs__cards__card blue">
-                    <p class="tip">¿Lorem ipsum dolor sit.?</p>
-                    <p class="second-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, debitis?</p>
-                </div>
-            </div>
-        </section> -->
-    
         <!--PRICING-->
         <div class="border_detail"></div>
-        <section id="pricing" class="section pricing pb-5">
+        <section id="pricing" class="section pricing pb-5" aria-labelledby="pricing-title">
             <header>
-                <h2 class="subtitle container">Nuestras membresias</h2>
+                <h2 id="pricing-title" class="subtitle container">Nuestras membresías</h2>
             </header>
             <div class="pricing__cards container">
                 <div class="wrapper">
-                <input id="tab-1" name="slider" type="radio" />
-                <input checked="" id="tab-2" name="slider" type="radio" />
-                <header>
-                    <label class="tab-1" for="tab-1">Principiante</label>
-                    <label class="tab-2" for="tab-2">Profesional</label>
-                    <div class="slider"></div>
-                </header>
-                <div class="card-area">
-                    <div class="cards">
-                    <!--membresia principiante-->
-                    <div class="row row-1">
-                        <div class="price-details">
-                            <h3>Principiante</h3>
-                            <span class="price">$89.99</span>
-                            <p>ANUAL $989.89</p>
+                    <!-- Selector de membresía -->
+                    <input id="tab-1" name="slider" type="radio" aria-label="Membresía Principiante" />
+                    <input id="tab-2" name="slider" type="radio" checked aria-label="Membresía Profesional" />
+                    <header>
+                        <label class="tab-1" for="tab-1">Principiante</label>
+                        <label class="tab-2" for="tab-2">Profesional</label>
+                        <div class="slider"></div>
+                    </header>
+                    <div class="card-area">
+                        <div class="cards">
+                            <!-- Membresía Principiante -->
+                            <div class="row row-1" role="tabpanel" aria-labelledby="tab-1">
+                                <div class="price-details">
+                                    <h3>Principiante</h3>
+                                    <span class="price">$89.99</span>
+                                    <p>ANUAL $989.89</p>
+                                </div>
+                                <ul class="features">
+                                    <li><strong>Hospedaje de paquetes</strong> hasta 2 m<sup>3</sup> (1 pallet).</li>
+                                    <li><strong>Dirección en USA</strong> para retorno de mercadería.</li>
+                                    <li><strong>Recepción de paquetes</strong></li>
+                                    <li><strong>Etiquetas labels de caja final</strong></li>
+                                    <li><strong>Control de Calidad</strong> de 1 producto</li>
+                                    <li><strong>Envíos a Amz FBA</strong> a cargo del cliente (transportista UPS)</li>
+                                </ul>
+                            </div>
+        
+                            <!-- Membresía Profesional -->
+                            <div class="row pro" role="tabpanel" aria-labelledby="tab-2">
+                                <div class="price-details">
+                                    <h3 class="ribbon">Profesional</h3>
+                                    <span class="price">$179.99</span>
+                                    <p>ANUAL $1979.89</p>
+                                </div>
+                                <ul class="features">
+                                    <li><strong>Hospedaje de paquetes</strong> hasta <span class="pro__feature">4 m<sup>3</sup> (2 pallets)</span>.</li>
+                                    <li><strong>Dirección en USA</strong> para retorno de mercadería.</li>
+                                    <li><strong>Recepción de paquetes</strong></li>
+                                    <li><strong>Etiquetas labels de caja final</strong></li>
+                                    <li><strong>Control de Calidad</strong> de <span class="pro__feature">2 productos</span></li>
+                                    <li><strong>Envíos a Amz FBA</strong> a cargo del cliente (transportista UPS)</li>
+                                    <li><span class="pro__feature"><strong>Embalaje y reemplazo</strong> de cajas externas</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="features">
-                            <li>
-                                <strong>Hospedaje de paquetes</strong> hasta 2 m3 (1 pallet).
-                            </li>
-                            <li>
-                                <strong>Dirección en USA</strong> para retorno de mercadería.
-                            </li>
-                            <li>
-                                <strong>Recepción de paquetes.</strong>
-                            </li>
-                            <li>
-                                <strong>Etiquetas labels de caja final.</strong>
-                            </li>
-                            <li>
-                                <strong>Control de Calidad</strong> de 1 producto.
-                            </li>
-                            <li>
-                                <strong>Envíos a Amz FBA</strong> a cargo del cliente (transportista UPS).
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <!--membresia profesional-->
-                    <div class="row pro">
-                        <div class="price-details">
-                            <h3 class="ribbon">Profesional</h3>
-                            <span class="price">$179.99</span>
-                            <p>ANUAL $1979.89</p>
-                        </div>
-                        <ul class="features">
-                            <li>
-                                <strong>Hospedaje de paquetes</strong> hasta <span class="pro__feature">4 m3 (2 pallets)</span>.
-                            </li>
-                            <li>
-                                <strong>Dirección en USA</strong> para retorno de mercadería.
-                            </li>
-                            <li>
-                                <strong>Recepción de paquetes.</strong>
-                            </li>
-                            <li>
-                                <strong>Etiquetas labels de caja final.</strong>
-                            </li>
-                            <li>
-                                <strong>Control de Calidad</strong> de <span class="pro__feature">2 productos</span>.
-                            </li>
-                            <li>
-                                <strong>Envíos a Amz FBA</strong> a cargo del cliente (transportista UPS).
-                            </li>
-                            <li>
-                                <span class="pro__feature"><strong>Embalaje y reemplazo</strong> de cajas externas</span>.
-                            </li>
-                        </ul>
-                    </div>
-                    
                     </div>
                 </div>
-                </div>
-
             </div>
         </section>
+        
 
         <div class="border_detail"></div>
         <section id="contact" class="section contact pb-5">
@@ -361,24 +310,24 @@
                 <p>¡Dejanos tus consultas y te estaremos contactando!</p>
             </header>
             <div class="contact__form container">
-                <form action="">
-                    <label>
+                <form action="" aria-labelledby="contact-form">
+                    <label for="name">
                         <span>Nombre</span>
-                        <input type="text" placeholder="Dejanos tu nombre" required>
+                        <input type="text" id="name" placeholder="Dejanos tu nombre" required aria-required="true" aria-label="Nombre">
                     </label>
-                    <label>
+                    <label for="lastname">
                         <span>Apellido</span>
-                        <input type="text" placeholder="Dejanos tu apellido" required>
+                        <input type="text" id="lastname" placeholder="Dejanos tu apellido" required aria-required="true" aria-label="Apellido">
                     </label>
-                    <label>
+                    <label for="email">
                         <span>Correo electrónico</span>
-                        <input type="email" placeholder="Dejanos tu correo electrónico" required>
+                        <input type="email" id="email" placeholder="Dejanos tu correo electrónico" required aria-required="true" aria-label="Correo electrónico">
                     </label>
-                    <label>
+                    <label for="message">
                         <span>Mensaje</span>
-                        <textarea></textarea>
+                        <textarea id="message" placeholder="Escribe tu mensaje aquí" aria-label="Mensaje"></textarea>
                     </label>
-                    <button type="submit" class="contact__form__btn_submit">Enviar</button>
+                    <button type="submit" class="contact__form__btn_submit" aria-label="Enviar formulario">Enviar</button>
                 </form>
             </div>
         </section>

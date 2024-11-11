@@ -33,6 +33,7 @@
 }
 
 .cta-button{
+    display: inline-block;
     color: #000000;
     padding: 0.6em 1.3em;
     font-size: 18px;
@@ -120,6 +121,11 @@
         }
     }
 
+    .cta-button-container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
     .cta-button{
         all: unset;
         display: flex;
@@ -135,6 +141,7 @@
         overflow: hidden;
         transition: border 300ms, color 300ms;
         user-select: none;
+
 
         p {
             z-index: 1;
