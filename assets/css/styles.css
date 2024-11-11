@@ -207,9 +207,11 @@ button {
 .media-container {
   margin: 0;
   padding: 0;
+  height: 400px;
 }
 .media-container .promo-video {
   width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 992px) {
@@ -218,6 +220,7 @@ button {
     background: linear-gradient(#000000 80%, #108239, #6CB860, #ffffff);
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
   }
   .value-proposition__logo {
     height: 170px;
@@ -243,7 +246,7 @@ button {
     justify-content: center;
     align-items: center;
   }
-  .value-proposition .container {
+  .value-proposition__container {
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
@@ -305,6 +308,15 @@ button {
   }
   .cta-button:active::before, .cta-button:active::after {
     background: #108239;
+  }
+  .media-container {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+  }
+  .media-container .promo-video {
+    width: 100%;
+    height: 100%;
   }
 }
 .questions ul {
@@ -615,7 +627,7 @@ button {
     margin: 0;
   }
   .how-it-works .roadmap__step:nth-child(even) .roadmap__step__icon {
-    color: #0E2327;
+    color: #6CB860;
     order: 1;
     padding-left: 20px;
   }
@@ -898,7 +910,7 @@ header .slider {
   }
   .cards .row:hover {
     box-shadow: 5px 10px 15px #0E2327, -5px -10px 15px #ffffff;
-    transform: scale(1.1);
+    transform: scale(1.005);
   }
   .cards .row .price-details {
     z-index: 10;
@@ -1137,6 +1149,40 @@ header .slider {
   .pro__feature {
     color: #108239;
     text-shadow: -2px 0px 16px #108239;
+  }
+}
+.instagram {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 90px;
+  right: 10px;
+  z-index: 99999;
+  border-radius: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: i;
+  transition-color: #ffffff;
+}
+.instagram:hover {
+  background: #bc1888;
+  background: -moz-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+  background: -webkit-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+  background: linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+}
+
+@media (min-width: 992px) {
+  .instagram {
+    bottom: 40px;
+    right: 130px;
+  }
+  .instagram:hover {
+    background-color: #108239;
   }
 }
 .whatsapp {

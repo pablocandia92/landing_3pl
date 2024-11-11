@@ -1,0 +1,40 @@
+.instagram {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 90px;
+    right: 10px;
+    z-index: 99999;
+    border-radius: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 
+
+    i {
+        color: $white;
+    }
+
+    &:hover {
+        background: #bc1888;
+        background: -moz-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+        background: -webkit-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+        background: linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+    }
+}
+
+
+@media (min-width:992px) {
+    .instagram {
+        bottom: 40px;
+        right: 130px;
+
+        &:hover {
+            background-color: $forest-green;
+        }
+    }
+}
