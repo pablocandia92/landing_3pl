@@ -16,31 +16,38 @@ document.addEventListener("DOMContentLoaded", function () {
         //     return;
         // }
 
-        // Define los datos que se enviarán en la solicitud
-        const data = {
-            name: name,
-            last_name: lastName,
-            email: email,
-            message: message
-        };
+        const messageDiv = document.getElementById("contact__form_message");
+        if (!name || !lastName || !email || !message) {
+            messageDiv.textContent = "Por favor, completa todos los campos."
+
+        } else {
+            const data = {
+                name: name,
+                last_name: lastName,
+                email: email,
+                message: message
+            };
+            
+            fetch("https://staging.3plfasttrack.com/api/contact/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Error al enviar el formulario");
+                }
+                return response.json();
+            })
+            .then(data => {
+                form.reset();
+                messageDiv.textContent = "¡Gracias por tu mensaje, te contactaremos a la brevedad!"
+            })
+            .catch(error => {
+            });
+        }
         
-        fetch("https://staging.3plfasttrack.com/api/contact/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data)
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Error al enviar el formulario");
-            }
-            return response.json();
-        })
-        .then(data => {
-            form.reset();
-        })
-        .catch(error => {
-        });
     });
 });
