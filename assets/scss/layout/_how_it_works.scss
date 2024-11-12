@@ -113,7 +113,8 @@
                         color: $gunmetal;
                     }
                     &__img_container {
-
+                        min-width: 75px;
+                        max-width: 130px;
 
                         img {
                             width: 100%;

@@ -592,6 +592,10 @@ button {
   .how-it-works .roadmap__step__icon .fa-tiktok {
     color: #0E2327;
   }
+  .how-it-works .roadmap__step__icon__img_container {
+    min-width: 75px;
+    max-width: 130px;
+  }
   .how-it-works .roadmap__step__icon__img_container img {
     width: 100%;
     height: 100%;
