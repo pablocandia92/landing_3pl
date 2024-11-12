@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
         
-        // Valida que los campos requeridos no estén vacíos
-        if (!name || !lastName || !email) {
-            alert("Por favor, completa todos los campos requeridos.");
-            return;
-        }
+        // // Valida que los campos requeridos no estén vacíos
+        // if (!name || !lastName || !email) {
+        //     alert("Por favor, completa todos los campos requeridos.");
+        //     return;
+        // }
 
         // Define los datos que se enviarán en la solicitud
         const data = {
@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
             message: message
         };
         
-        // Realiza el fetch con el método POST
         fetch("https://staging.3plfasttrack.com/api/contact/", {
             method: "POST",
             headers: {
@@ -39,13 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
             return response.json();
         })
         .then(data => {
-            // Muestra un mensaje de éxito o redirige a una página de confirmación
-            alert("Gracias por tu mensaje. Nos pondremos en contacto pronto.");
-            form.reset();  // Limpia el formulario después de enviarlo
+            form.reset();
         })
         .catch(error => {
-            console.error("Hubo un problema con la solicitud:", error);
-            alert("Hubo un problema al enviar el formulario. Por favor, intenta nuevamente.");
         });
     });
 });
