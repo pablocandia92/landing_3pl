@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home -->
+    <url>
+        <loc>https://3plfasttrack.com/</loc>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <!-- Sección Nuestras Soluciones -->
+    <url>
+        <loc>https://3plfasttrack.com/#solutions</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <!-- Sección Cómo Funciona -->
+    <url>
+        <loc>https://3plfasttrack.com/#how-it-works</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <!-- Sección Membresías -->
+    <url>
+        <loc>https://3plfasttrack.com/#pricing</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <!-- Sección Contacto -->
+    <url>
+        <loc>https://3plfasttrack.com/#contact</loc>
+        <priority>0.7</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Sección Preguntas Frecuentes -->
+    <url>
+        <loc>https://3plfasttrack.com/#questions</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <!-- Sección Por Qué Elegirnos -->
+    <url>
+        <loc>https://3plfasttrack.com/#why-choose-us</loc>
+        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>

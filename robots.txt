@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /assets/img/
+Disallow: /assets/video/
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Permitir el acceso a CSS y JS críticos para mejorar el renderizado
+Allow: /assets/css/styles.css
+Allow: /assets/js/main.js
+
+# Instrucciones generales de indexación
+Sitemap: https://3plfasttrack.com/sitemap.xml
