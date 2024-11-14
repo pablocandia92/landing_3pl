@@ -387,13 +387,19 @@ button {
 @media (min-width: 992px) {
   .solutions__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 16px;
   }
   .solutions__cards__card {
     justify-content: start;
     width: 100%;
-    height: 200px;
+    height: 320px;
+  }
+  .solutions__cards__card h6 {
+    font-size: 1.5rem;
+  }
+  .solutions__cards__card p {
+    font-size: 1.3rem;
   }
 }
 .confidence {
@@ -1231,6 +1237,112 @@ header .slider {
   }
   .whatsapp:hover {
     background-color: #108239;
+  }
+}
+/*patch en*/
+@media (min-width: 992px) {
+  .cta-button_en::before {
+    left: 0;
+    transform: translateX(-10em);
+  }
+  .cta-button_en::after {
+    right: 0;
+    transform: translateX(10em);
+  }
+  .cta-button_en:hover::before {
+    transform: translateX(-1em);
+  }
+  .cta-button_en:hover::after {
+    transform: translateX(1em);
+  }
+}
+.confidence_card_en {
+  height: 300px;
+}
+.confidence_card_en .bg {
+  height: 300px;
+}
+.confidence_card_en .blob {
+  height: 150px;
+}
+
+@media (min-width: 992px) {
+  .confidence_card_en {
+    height: 320px;
+  }
+  .confidence_card_en .bg {
+    height: 320px;
+  }
+  .confidence_card_en .blob {
+    height: 160px;
+  }
+}
+.price-details_en .price_en::after {
+  content: "/mo";
+  right: -33px;
+  bottom: 17px;
+  font-size: 13px;
+}
+
+@media (min-width: 992px) {
+  .address_en {
+    width: 400px;
+  }
+  .schedule_en {
+    width: 350px;
+  }
+}
+/*animations*/
+.blur-in-expand {
+  animation: blur-in-expand 0.4s linear both;
+}
+
+@keyframes blur-in-expand {
+  0% {
+    transform: scale(0);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.slide-top {
+  animation: slide-top 0.4s linear both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.blur-in-1 {
+  animation: fade-in 1s 0.2s linear both;
+}
+
+.blur-in-2 {
+  animation: fade-in 1s 0.4s linear both;
+}
+
+.blur-in-3 {
+  animation: fade-in 1s 1.4s linear both;
+}
+
+.blur-in-4 {
+  animation: fade-in 1s 1.6s linear both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

@@ -1,0 +1,21 @@
+@media (min-width:992px){
+    .cta-button_en {
+        &::before {
+            left: 0;
+            transform: translateX(-10em);
+        }
+
+        &::after {
+            right: 0;
+            transform: translateX(10em);
+        }
+
+        &:hover::before {
+            transform: translateX(-1em);
+        }
+
+        &:hover::after {
+            transform: translateX(1em);
+        }
+    }
+}

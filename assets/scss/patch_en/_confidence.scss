@@ -1,0 +1,25 @@
+.confidence_card_en {
+    height: 300px;
+
+    .bg {
+        height: 300px;
+    }
+
+    .blob {
+        height: calc(300px/2);
+    }
+}
+
+@media (min-width:992px) {
+    .confidence_card_en {
+        height: 320px;
+    
+        .bg {
+            height: 320px;
+        }
+    
+        .blob {
+            height: calc(320px/2);
+        }
+    }
+}

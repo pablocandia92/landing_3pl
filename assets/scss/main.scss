@@ -17,3 +17,13 @@
 @import 'components/pro_card';
 @import 'components/instagram';
 @import 'components/whatsapp';
+
+/*patch en*/
+@import 'patch_en/value_propisition';
+@import 'patch_en/confidence';
+@import 'patch_en/pricing';
+@import 'patch_en/footer';
+
+/*animations*/
+@import 'base/animations';
+@import 'components/value_prop_animations';
