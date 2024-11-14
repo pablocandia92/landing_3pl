@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+    document.querySelectorAll('.navbar-nav .nav-button').forEach(item => {
         item.addEventListener('click', () => {
             const offcanvasElement = document.getElementById('offcanvasNavbar');
             try {
