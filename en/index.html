@@ -56,37 +56,46 @@
         </section>
 
         <!-- Navbar -->
-        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top" aria-label="Barra de navegación principal de Fast Track Logistics">
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top" aria-label="Main navigation bar of Fast Track Logistics">
             <div class="container-fluid">
-                <a id="navbar-logo" class="navbar-brand" href="#" aria-label="Logo de Fast Track Logistics - Inicio">
-                    <img src="../assets/img/icono-sin-fondo.svg" alt="Logo de Fast Track Logistics">
+                <a id="navbar-logo" class="navbar-brand" href="#" aria-label="Fast Track Logistics Logo - Home">
+                    <img src="../assets/img/icono-sin-fondo.svg" alt="Fast Track Logistics Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-label="Menú de navegación de Fast Track Logistics">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-label="Fast Track Logistics Navigation Menu">
                     <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar menú"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#solutions" title="Ver Nuestras Soluciones de Logística" aria-label="Nuestras soluciones de logística">Nuestras soluciones</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  EN
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../index.html">ES</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#how-it-works" title="Conoce cómo funciona Fast Track Logistics" aria-label="Conoce cómo funciona">¿Cómo funciona?</a>
+                                <a class="nav-link" href="#solutions" title="View Our Logistics Solutions" aria-label="Our logistics solutions">Our Solutions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#pricing" title="Ver Membresías de Fast Track Logistics" aria-label="Membresías de Fast Track Logistics">Membresías</a>
+                                <a class="nav-link" href="#how-it-works" title="Learn how Fast Track Logistics works" aria-label="Learn how it works">How it Works</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact" title="Contáctanos en Fast Track Logistics" aria-label="Contacto de Fast Track Logistics">Contacto</a>
+                                <a class="nav-link" href="#pricing" title="View Fast Track Logistics Memberships" aria-label="Fast Track Logistics Memberships">Memberships</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact" title="Contact Fast Track Logistics" aria-label="Fast Track Logistics Contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
+        
 
         <!--QUESTIONS-->
         <div class="border_detail"></div>
