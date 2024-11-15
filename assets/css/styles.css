@@ -398,7 +398,7 @@ button {
   .solutions__cards__card {
     justify-content: start;
     width: 100%;
-    height: 320px;
+    height: 320px !important;
   }
   .solutions__cards__card h6 {
     font-size: 1.5rem;
@@ -1305,25 +1305,49 @@ header .slider {
     transform: translateX(1em);
   }
 }
-.confidence_card_en {
-  height: 300px;
-}
-.confidence_card_en .bg {
-  height: 300px;
-}
-.confidence_card_en .blob {
-  height: 150px;
+.solution_card_en {
+  height: 220px;
 }
 
+@media (min-width: 381px) {
+  .solution_card_en {
+    height: 210px;
+  }
+}
+@media (min-width: 1200px) {
+  .solution_card_en {
+    height: 260px !important;
+  }
+}
+.confidence_card_en {
+  height: 315px;
+}
+.confidence_card_en .bg {
+  height: 315px;
+}
+.confidence_card_en .blob {
+  height: 157.5px;
+}
+
+@media (min-width: 381px) {
+  .confidence_card_en {
+    height: 290px;
+  }
+  .confidence_card_en .bg {
+    height: 290px;
+  }
+  .confidence_card_en .blob {
+    height: 145px;
+  }
+}
 @media (min-width: 992px) {
   .confidence_card_en {
     height: 320px;
   }
-  .confidence_card_en .bg {
-    height: 320px;
-  }
-  .confidence_card_en .blob {
-    height: 160px;
+}
+@media (min-width: 1200px) {
+  .confidence_card_en {
+    height: 300px;
   }
 }
 .price-details_en .price_en::after {

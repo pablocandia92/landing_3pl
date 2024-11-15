@@ -1,12 +1,26 @@
-.confidence_card_en {
-    height: 300px;
+.confidence_card_en { 
+    height: 315px;
 
     .bg {
-        height: 300px;
+        height: 315px;
     }
 
     .blob {
-        height: calc(300px/2);
+        height: calc(315px/2);
+    }
+}
+
+@media (min-width:381px) {
+    .confidence_card_en {
+        height: 290px;
+
+        .bg {
+            height: 290px;
+        }
+    
+        .blob {
+            height: calc(290px/2);
+        }
     }
 }
 
@@ -14,12 +28,26 @@
     .confidence_card_en {
         height: 320px;
     
-        .bg {
-            height: 320px;
-        }
+        // .bg {
+        //     height: 320px;
+        // }
     
-        .blob {
-            height: calc(320px/2);
-        }
+        // .blob {
+        //     height: calc(320px/2);
+        // }
+    }
+}
+
+@media (min-width:1200px) {
+    .confidence_card_en {
+        height: 300px;
+    
+        // .bg {
+        //     height: 320px;
+        // }
+    
+        // .blob {
+        //     height: calc(320px/2);
+        // }
     }
 }

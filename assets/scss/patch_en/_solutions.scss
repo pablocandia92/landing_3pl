@@ -1,0 +1,15 @@
+.solution_card_en {
+    height: 220px;
+}
+
+@media (min-width:381px) {
+    .solution_card_en {
+        height: 210px;
+    }
+}
+
+@media (min-width:1200px) {
+    .solution_card_en {
+        height: 260px !important;
+    }
+}
