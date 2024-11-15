@@ -13,7 +13,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+
 
     i {
         color: $white;
@@ -27,6 +29,9 @@
     }
 }
 
+.instagram.visible {
+    opacity: 1;
+}
 
 @media (min-width:992px) {
     .instagram {
