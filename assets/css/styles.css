@@ -367,7 +367,7 @@ button {
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 220px;
+  height: 250px;
   background: #ffffff;
   border-radius: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -384,6 +384,11 @@ button {
   text-align: start;
 }
 
+@media (min-width: 500px) {
+  .solutions__cards__card {
+    height: 220px;
+  }
+}
 @media (min-width: 992px) {
   .solutions__cards {
     display: grid;
@@ -402,6 +407,11 @@ button {
     font-size: 1.3rem;
   }
 }
+@media (min-width: 1200px) {
+  .solutions__cards__card {
+    height: 290px;
+  }
+}
 .confidence {
   color: #6CB860;
   background: linear-gradient(#000000 85%, #108239, #6CB860);
@@ -417,7 +427,7 @@ button {
   margin-bottom: 20px;
   padding: 15px;
   width: 90%;
-  height: 320px;
+  height: 350px;
   border-radius: 14px;
   z-index: 500;
   overflow: hidden;
@@ -431,7 +441,7 @@ button {
   top: 5px;
   left: 5px;
   width: 100%;
-  height: 320px;
+  height: 350px;
   z-index: 2;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(24px);
@@ -445,7 +455,7 @@ button {
   top: 50%;
   left: 50%;
   width: 100%;
-  height: 160px;
+  height: 175px;
   border-radius: 50%;
   background-color: #108239;
   opacity: 0.6;
@@ -484,6 +494,17 @@ button {
   }
 }
 
+@media (min-width: 390px) {
+  .confidence__cards__card {
+    height: 310px;
+  }
+  .confidence__cards__card .blob {
+    height: 155px;
+  }
+  .confidence__cards__card .bg {
+    height: 310px;
+  }
+}
 @media (min-width: 992px) {
   .confidence__cards {
     display: flex;
@@ -504,6 +525,11 @@ button {
   }
   .confidence__cards__card .bg {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .confidence__cards__card {
+    height: 300px;
   }
 }
 .how-it-works .roadmap {
@@ -765,6 +791,8 @@ button {
 .pricing__cards {
   display: flex;
   justify-content: center;
+  width: 100% !important;
+  padding: 0 !important;
 }
 
 .wrapper {
@@ -863,7 +891,7 @@ header .slider {
 }
 
 .price-details .price {
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 600;
   position: relative;
   font-family: "Noto Sans", sans-serif;
@@ -912,6 +940,9 @@ header .slider {
   .cards .row-1 {
     margin-left: 0;
     transition: none;
+  }
+  .price-details .price {
+    font-size: 65px;
   }
   .wrapper {
     width: 100%;
@@ -978,12 +1009,17 @@ header .slider {
     transform: scaleX(-1); /* flip horizontally */
   }
   .cards .row .features {
-    height: 370px;
+    height: 310px;
   }
   .cards .row .features li {
     font-size: 1.1rem;
     list-style: none;
     margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards .row .features {
+    height: 280px;
   }
 }
 .contact {
@@ -1194,14 +1230,21 @@ header .slider {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: i;
-  transition-color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.instagram i {
+  color: #ffffff;
 }
 .instagram:hover {
   background: #bc1888;
   background: -moz-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
   background: -webkit-linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
   background: linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+}
+
+.instagram.visible {
+  opacity: 1;
 }
 
 @media (min-width: 992px) {
@@ -1225,9 +1268,15 @@ header .slider {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .whatsapp i {
   color: #ffffff;
+}
+
+.whatsapp.visible {
+  opacity: 1;
 }
 
 @media (min-width: 992px) {

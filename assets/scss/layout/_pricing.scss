@@ -2,6 +2,8 @@
   &__cards {
     display: flex;
     justify-content: center;
+    width: 100% !important;
+    padding: 0 !important;
   }
 }
 
@@ -100,7 +102,7 @@
   }
   .price-details {
     .price {
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     position: relative;
     font-family: "Noto Sans", sans-serif;
@@ -152,6 +154,12 @@
   .cards .row-1 {
       margin-left: 0;
       transition: none;
+  }
+
+  .price-details {
+    .price {
+      font-size: 65px;
+    }
   }
 
   .wrapper {
@@ -231,7 +239,7 @@
       }
 
       .features {
-        height: 370px;
+        height: 310px;
 
         li {
           font-size: 1.1rem;
@@ -239,6 +247,17 @@
           margin-bottom: 10px;
         }
       }
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .cards {
+    .row {
+      .features {
+        height: 280px;
+      }
+
     }
   }
 }
