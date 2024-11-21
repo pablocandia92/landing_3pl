@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 messageDiv.textContent = "¡Gracias por tu mensaje, te contactaremos a la brevedad!"
             })
             .catch(error => {
-                console.log(error)
             });
         }
         
