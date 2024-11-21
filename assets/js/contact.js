@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("name").value;
         const lastName = document.getElementById("lastname").value;
         const email = document.getElementById("email").value;
+        const phoneNumber = document.getElementById("phone_number").value;
+        const city = document.getElementById("city").value;
         const message = document.getElementById("message").value;
         
         // // Valida que los campos requeridos no estén vacíos
@@ -17,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // }
 
         const messageDiv = document.getElementById("contact__form_message");
-        if (!name || !lastName || !email || !phone_number || !message) {
+        if (!name || !lastName || !email || !phoneNumber || !city || !message) {
             messageDiv.textContent = "Por favor, completa todos los campos."
 
         } else {
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 name: name,
                 last_name: lastName,
                 email: email,
+                phone_number : phoneNumber,
                 message: message
             };
             
