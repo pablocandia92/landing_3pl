@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 last_name: lastName,
                 email: email,
                 phone_number : phoneNumber,
+                city : city,
                 message: message
             };
             
