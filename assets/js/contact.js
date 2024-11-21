@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // }
 
         const messageDiv = document.getElementById("contact__form_message");
-        if (!name || !lastName || !email || !message) {
+        if (!name || !lastName || !email || !phone_number || !message) {
             messageDiv.textContent = "Por favor, completa todos los campos."
 
         } else {
