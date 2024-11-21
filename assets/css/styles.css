@@ -160,6 +160,7 @@ button {
   flex-direction: column;
 }
 .value-proposition__logo {
+  user-select: none;
   height: 100px;
   width: 100%;
 }
